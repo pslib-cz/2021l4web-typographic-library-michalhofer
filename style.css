@@ -3,6 +3,7 @@ body{
     font-size: 1.3rem;
     line-height: 1.5;
     color: #171717;
+    word-spacing: 0.1rem;
 }
 main{
     font-family:'Ubuntu', sans-serif;
@@ -37,4 +38,184 @@ small{
 a{
     text-decoration: none;
     color: #171717;
+}
+a:hover{
+    color: gray;
+}
+.text-style{
+    font-size: 1rem;
+    color: grey;
+}
+.text-styles{
+    display: flex;
+    flex-direction: row;
+}
+.text-styles div{
+    padding: 2em;
+}
+q{
+    font-style: italic;
+    word-spacing: 0.2rem;
+    letter-spacing: 0.05rem;
+}
+blockquote{
+    font-style: italic;
+    word-spacing: 0.4rem;
+    letter-spacing: 0.05rem;
+}
+.buttons .default{
+    background-color: black;
+    color: white;
+    max-width: 6rem;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 10%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.buttons .simple{
+    background-color: white;
+    color: black;
+    max-width: 6rem;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 10%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+}
+.buttons_row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
+.buttons .default:hover{
+    background-color: white;
+    transform: scale(1.1);
+    color: black;
+    max-width: 6rem;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 10%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding: 1rem;
+}
+.buttons .simple:hover{
+    background-color: white;
+    transform: scale(1.1);
+    color: black;
+    max-width: 6rem;
+    justify-content: center;
+    border: black solid 2px;
+    border-radius: 10%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    padding: 1rem;
+}
+li{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+code{
+    font-style: inherit;
+    font-weight: 100;
+}
+pre{
+    background-color: whitesmoke;
+    font-size: 1rem;
+}
+img{
+    max-width: 100%;
+}
+figcaption{
+    text-align: center;
+}
+th{
+    text-align: left;
+    padding: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-weight: normal;
+}
+thead th{
+    font-weight: bold;
+}
+th{
+    border-bottom: 1px solid grey;
+}
+@media all and (max-width: 1200px) {
+    main{
+        font-family:'Ubuntu', sans-serif;
+        max-width: 30rem;
+        margin: auto;
+        font-weight: 200;
+        font-size: 1.2rem;
+    }
+    h1{
+        font-size: 4rem;
+    }
+    h2{
+        font-size: 3rem;
+    }
+    h3{
+        font-size: 2rem;
+    }
+    h4{
+        font-size: 1.5rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    .text-styles{
+        display: flex;
+        flex-direction: column;
+    }
+    .text-styles div{
+        padding: 0;
+    }
+    th{
+        padding: .8rem;
+    }
+    table{
+        margin: auto;
+    }
+    .buttons_row{
+        flex-direction: column;
+    }
+}
+@media all and (max-width: 600px) {
+    body{
+        margin: 5%;
+    }
+    main{
+        font-size: 1rem;
+        max-width: none;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    h3{
+        font-size: 1.5rem;
+    }
+    h4{
+        font-size: 1.2rem;
+    }
+    h5{
+        font-size: 1rem;
+    }
+    code{
+        font-size: 0.8rem;
+    }
+    th{
+        padding: .5rem;
+    }
 }
